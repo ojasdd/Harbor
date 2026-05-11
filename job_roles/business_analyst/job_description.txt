@@ -1,0 +1,25 @@
+Role: Business Analyst
+
+Company Overview:
+We are looking for a Business Analyst to bridge business requirements and technical implementation.
+
+Responsibilities:
+- Gather requirements
+- Analyze business processes
+- Create reports and dashboards
+- Communicate with stakeholders
+
+Required Skills:
+- Excel
+- SQL
+- Data Analysis
+- Communication
+
+Preferred Skills:
+- Tableau
+- Power BI
+- Agile methodologies
+
+Experience:
+0-2 years preferred
+Bachelor's degree in Business, IT, or related field

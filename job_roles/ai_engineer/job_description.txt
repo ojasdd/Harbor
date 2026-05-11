@@ -1,0 +1,27 @@
+Role: AI Engineer
+
+Company Overview:
+We are hiring an AI Engineer to develop intelligent systems using machine learning, deep learning, and generative AI technologies.
+
+Responsibilities:
+- Build AI applications
+- Train deep learning models
+- Fine-tune foundation models
+- Deploy AI services
+- Optimize model performance
+
+Required Skills:
+- Python
+- Deep Learning
+- Machine Learning
+- APIs
+
+Preferred Skills:
+- LLMs
+- LangChain
+- Vector Databases
+- Cloud deployment
+
+Experience:
+1-3 years preferred
+Bachelor's degree in Computer Science or AI-related field

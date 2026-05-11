@@ -1,0 +1,26 @@
+Role: Backend Engineer
+
+Company Overview:
+We are seeking a Backend Engineer to build scalable server-side applications and APIs.
+
+Responsibilities:
+- Build REST APIs
+- Manage databases
+- Implement authentication
+- Optimize backend performance
+- Integrate services
+
+Required Skills:
+- Python or Java
+- SQL
+- APIs
+- OOP
+
+Preferred Skills:
+- System Design
+- Caching
+- Microservices
+
+Experience:
+0-3 years preferred
+Bachelor's degree in Computer Science or related field

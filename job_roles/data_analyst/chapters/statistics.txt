@@ -1,0 +1,141 @@
+STATISTICS FOR DATA ANALYSIS
+
+Statistics provides the mathematical foundation for understanding,
+summarizing, and drawing conclusions from data.
+
+---
+
+DESCRIPTIVE STATISTICS
+
+Mean is the arithmetic average of all values.
+It is sensitive to outliers. Use when data is symmetric and has no extreme values.
+Formula: sum of values / count of values
+
+Median is the middle value when data is sorted.
+It is robust to outliers. Use when data is skewed or has extreme values.
+
+Mode is the most frequently occurring value.
+Useful for categorical data. A dataset can have multiple modes.
+
+When to use which:
+- Symmetric data with no outliers: use mean
+- Skewed data or outliers present: use median
+- Categorical data: use mode
+
+Variance measures the average squared deviation from the mean.
+Standard Deviation is the square root of variance. It measures spread in original units.
+Low SD means data is clustered around the mean.
+High SD means data is spread out.
+
+Percentiles divide data into 100 equal parts.
+25th percentile (Q1), 50th percentile (Q2/median), 75th percentile (Q3).
+IQR (Interquartile Range) = Q3 - Q1. Measures middle 50% spread.
+
+---
+
+PROBABILITY DISTRIBUTIONS
+
+Normal Distribution is bell-shaped and symmetric around the mean.
+68% of data falls within 1 SD, 95% within 2 SD, 99.7% within 3 SD.
+Many real-world phenomena follow this distribution.
+
+Skewness measures asymmetry of distribution.
+Positive skew: tail on right, mean > median.
+Negative skew: tail on left, mean < median.
+
+Kurtosis measures tail heaviness.
+High kurtosis means heavy tails and more outliers.
+
+---
+
+HYPOTHESIS TESTING
+
+Hypothesis testing determines whether sample data supports a claim about a population.
+
+Steps:
+1. Define null hypothesis (H0) - assumes no effect or no difference
+2. Define alternative hypothesis (H1) - what you want to prove
+3. Choose significance level alpha (usually 0.05)
+4. Calculate test statistic
+5. Compute p-value
+6. If p-value < alpha, reject null hypothesis
+
+P-value is the probability of observing results as extreme as the sample
+assuming the null hypothesis is true.
+P-value < 0.05 means result is statistically significant at 95% confidence.
+P-value does NOT measure the probability that H0 is true.
+
+Type I Error (False Positive): rejecting H0 when it is actually true.
+Type II Error (False Negative): failing to reject H0 when it is actually false.
+
+Common tests:
+T-test: compares means of two groups
+Chi-square test: tests relationship between categorical variables
+ANOVA: compares means of three or more groups
+Z-test: used when population variance is known and sample size is large
+
+---
+
+CORRELATION AND REGRESSION
+
+Correlation measures the linear relationship between two variables.
+Pearson correlation coefficient ranges from -1 to +1.
++1: perfect positive linear relationship
+-1: perfect negative linear relationship
+0: no linear relationship
+
+Correlation does NOT imply causation.
+Two variables can be correlated due to a confounding variable.
+
+Simple Linear Regression models relationship between one independent
+variable (X) and one dependent variable (Y).
+Formula: Y = b0 + b1*X + error
+b0 is the intercept. b1 is the slope (change in Y per unit change in X).
+
+Multiple Linear Regression uses two or more independent variables.
+Formula: Y = b0 + b1*X1 + b2*X2 + ... + error
+
+R-squared measures how much variance in Y is explained by the model.
+R-squared of 0.85 means 85% of variance is explained.
+
+Assumptions of linear regression:
+- Linear relationship between X and Y
+- Independence of observations
+- Homoscedasticity (constant variance of errors)
+- Normally distributed errors
+
+Logistic Regression predicts a binary outcome (0 or 1).
+Outputs a probability between 0 and 1 using the sigmoid function.
+Used for classification problems like churn prediction, fraud detection.
+
+---
+
+OUTLIER DETECTION
+
+Outliers are data points significantly different from the rest.
+
+Z-score method: a point is an outlier if its Z-score is beyond +3 or -3.
+Formula: Z = (X - mean) / standard_deviation
+
+IQR method: a point is an outlier if it falls below Q1 - 1.5*IQR
+or above Q3 + 1.5*IQR.
+
+Visual methods: box plots show outliers as points beyond the whiskers.
+Scatter plots can reveal outliers in two dimensions.
+
+---
+
+NORMALIZATION AND STANDARDIZATION
+
+Normalization rescales data to a fixed range usually 0 to 1.
+Formula: X_new = (X - X_min) / (X_max - X_min)
+Use normalization when data has no normal distribution or when
+the algorithm requires bounded input such as neural networks or KNN.
+
+Standardization transforms data to have mean 0 and standard deviation 1.
+Formula: Z = (X - mean) / standard_deviation
+Use standardization when data follows a normal distribution or when
+the algorithm assumes normally distributed input such as linear regression or SVM.
+
+Key difference: normalization is sensitive to outliers because it uses min and max.
+Standardization is more robust to outliers.

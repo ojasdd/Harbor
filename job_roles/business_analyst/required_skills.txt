@@ -1,0 +1,19 @@
+Core Skills for Business Analyst:
+
+Technical Skills:
+- Excel
+- SQL
+- Tableau
+- Power BI
+- Documentation
+
+Analytical Skills:
+- Communication
+- Business Understanding
+- Problem Solving
+- Critical Thinking
+
+Optional Skills:
+- Agile
+- Jira
+- Data Visualization

@@ -1,0 +1,30 @@
+Role: Data Analyst
+
+Company Overview:
+We are seeking a Data Analyst to collect, process, and analyze data to help business teams make informed decisions.
+
+Responsibilities:
+- Collect, clean, and preprocess structured and unstructured data
+- Analyze trends and patterns in datasets
+- Create dashboards and reports
+- Perform statistical analysis
+- Present findings to stakeholders
+- Collaborate with engineering and business teams
+
+Required Skills:
+- Python
+- SQL
+- Excel
+- Power BI or Tableau
+- Statistics
+- Data Cleaning
+- Data Visualization
+
+Preferred Skills:
+- Machine Learning basics
+- A/B Testing
+- Business Intelligence tools
+
+Experience:
+0-2 years preferred
+Bachelor's degree in Computer Science, Statistics, Mathematics, or related field

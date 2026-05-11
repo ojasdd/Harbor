@@ -1,0 +1,23 @@
+Question: What is the difference between GROUP BY and HAVING?
+Answer: GROUP BY groups rows by a column. HAVING filters those groups based on a condition after aggregation. WHERE cannot be used with aggregate functions but HAVING can.
+
+Question: What are window functions in SQL?
+Answer: Window functions perform calculations across a set of rows related to the current row without collapsing them. Examples include ROW_NUMBER, RANK, LAG, LEAD, and SUM OVER.
+
+Question: What is the difference between loc and iloc in Pandas?
+Answer: loc is label based and uses column names and row labels. iloc is index based and uses integer positions.
+
+Question: What is standard deviation?
+Answer: Standard deviation measures the spread of data around the mean. A low standard deviation means data is clustered. A high one means data is spread out.
+
+Question: What is the difference between normalization and standardization?
+Answer: Normalization rescales data between 0 and 1 using min and max values. Standardization transforms data to have mean 0 and standard deviation 1. Normalization is sensitive to outliers while standardization is more robust.
+
+Question: What is ETL?
+Answer: ETL stands for Extract Transform Load. You extract data from sources, transform it by cleaning and formatting, then load it into a data warehouse or database.
+
+Question: What is a Gantt chart used for?
+Answer: A Gantt chart is used for project management to show tasks on a timeline with start and end dates.
+
+Question: What is blockchain?
+Answer: Blockchain is a distributed ledger technology where data is stored in linked blocks that are tamper resistant.

@@ -1,0 +1,97 @@
+DATA VISUALIZATION
+
+Data visualization communicates insights from data through charts,
+graphs, and dashboards. Good visualizations are clear, accurate, and
+tell a story the audience can understand quickly.
+
+---
+
+CHOOSING THE RIGHT CHART
+
+Bar chart: compare values across categories.
+Use when: comparing sales by region, headcount by department.
+
+Line chart: show trends over time.
+Use when: monthly revenue, daily active users over a year.
+
+Scatter plot: show relationship between two numerical variables.
+Use when: age vs salary, advertising spend vs revenue.
+
+Histogram: show distribution of a single numerical variable.
+Use when: distribution of customer ages, distribution of order values.
+
+Pie chart: show proportions of a whole.
+Use when: market share breakdown. Avoid when there are many categories.
+
+Box plot: show distribution, median, IQR, and outliers.
+Use when: comparing salary distributions across departments.
+
+Heatmap: show magnitude of values in a matrix using color.
+Use when: correlation matrices, website traffic by hour and day.
+
+Funnel chart: show drop-off through sequential stages.
+Use when: sales pipeline, conversion funnel.
+
+---
+
+DASHBOARDS
+
+A dashboard consolidates multiple KPIs and charts into a single view
+for monitoring business performance in real time or near real time.
+
+Good dashboard principles:
+- Show the most important metrics prominently
+- Use consistent colors and fonts
+- Avoid clutter — every element must earn its place
+- Design for the audience — executives vs analysts need different views
+- Include filters for interactivity
+
+Common dashboard tools:
+Tableau: drag and drop, strong visualizations, widely used in enterprise.
+Power BI: Microsoft ecosystem, good for Excel users, strong DAX language.
+Looker: code-based (LookML), good for data teams, built on SQL.
+Google Data Studio: free, connects to Google products easily.
+Metabase: open source, easy for non-technical users.
+
+---
+
+KPI REPORTING
+
+KPIs (Key Performance Indicators) are measurable values that track
+progress toward business objectives.
+
+Characteristics of good KPIs:
+- Specific and clearly defined
+- Measurable with available data
+- Actionable — something the team can influence
+- Relevant to business goals
+- Time-bound — tracked over a specific period
+
+Common data analyst KPIs by domain:
+
+Sales: revenue, conversion rate, average deal size, sales cycle length
+Marketing: CAC (customer acquisition cost), CTR, ROAS, churn rate
+Product: DAU/MAU, retention rate, NPS, feature adoption rate
+Operations: SLA compliance, error rate, processing time, cost per unit
+
+---
+
+STORYTELLING WITH DATA
+
+Data storytelling combines data, visuals, and narrative to drive decisions.
+
+Structure of a good data story:
+1. Context — what is the business question?
+2. Findings — what does the data show?
+3. Insight — why does it matter?
+4. Recommendation — what should be done?
+
+Common mistakes to avoid:
+- Truncated Y-axis exaggerates differences
+- Using 3D charts distorts perception
+- Too many colors confuse the viewer
+- Missing axis labels or units
+- Showing too much data at once without a clear point
+
+Preattentive attributes draw attention instantly before conscious thought:
+color, size, position, shape. Use these to highlight what matters most.

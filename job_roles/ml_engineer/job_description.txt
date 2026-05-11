@@ -1,0 +1,29 @@
+Role: Machine Learning Engineer
+
+Company Overview:
+We are hiring an ML Engineer to build, deploy, and maintain machine learning systems in production.
+
+Responsibilities:
+- Develop scalable ML pipelines
+- Deploy trained models
+- Monitor model performance
+- Optimize inference speed
+- Work with APIs and cloud systems
+- Collaborate with data scientists
+
+Required Skills:
+- Python
+- Machine Learning
+- APIs
+- Docker
+- SQL
+
+Preferred Skills:
+- Kubernetes
+- CI/CD
+- Cloud platforms
+- MLOps tools
+
+Experience:
+1-3 years preferred
+Bachelor's degree in Computer Science or related field

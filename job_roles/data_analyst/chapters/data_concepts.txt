@@ -1,0 +1,77 @@
+DATA CONCEPTS
+
+DATA CLEANING
+
+Data cleaning is the process of identifying and correcting inaccurate,
+incomplete, duplicate, or inconsistent data in a dataset.
+
+Common steps in data cleaning:
+- Handling missing values through imputation or removal
+- Removing duplicate records
+- Standardizing formats such as dates and categories
+- Correcting inconsistent labels and typos
+- Detecting and treating outliers
+- Validating data types and ranges
+
+Clean data is essential for accurate analysis, reliable models, and
+trustworthy business decisions. Poor data quality leads to incorrect
+conclusions even with the best analytical methods.
+
+---
+
+A/B TESTING
+
+A/B testing is a controlled experiment that compares two versions of
+something to determine which performs better based on a defined metric.
+
+Process:
+1. Define the hypothesis and success metric
+2. Split users randomly into control group (A) and treatment group (B)
+3. Run the experiment for a sufficient duration
+4. Collect data and perform statistical significance testing
+5. Make decision based on p-value and practical significance
+
+Example: testing two landing page designs to compare conversion rates.
+The null hypothesis is that there is no difference between versions.
+If p-value is below 0.05 the difference is statistically significant.
+
+Common mistakes: stopping the test too early, not randomizing properly,
+testing too many variables at once (should be one change at a time).
+
+---
+
+ETL PIPELINE
+
+ETL stands for Extract, Transform, Load. It is the process of moving
+data from source systems into a target system like a data warehouse.
+
+Extract: pull raw data from sources such as databases, APIs, flat files,
+or third party services. Data may be structured, semi-structured, or unstructured.
+
+Transform: clean, reformat, enrich, and validate the data.
+Common transformations include filtering rows, joining datasets,
+aggregating values, standardizing formats, and applying business rules.
+
+Load: write the transformed data into the destination system such as
+a data warehouse like Snowflake, BigQuery, or Redshift.
+
+Modern alternative is ELT (Extract, Load, Transform) where raw data is
+loaded first and transformation happens inside the warehouse using SQL.
+
+Common ETL tools: Apache Airflow, dbt, Talend, Informatica, AWS Glue.
+
+---
+
+DATA ROLES
+
+A Data Analyst collects, cleans, and analyzes data to help organizations
+make data-driven decisions. They identify trends, build dashboards,
+generate reports, and communicate insights to stakeholders.
+Common tools: SQL, Python, Excel, Tableau, Power BI.
+
+A Data Engineer builds and maintains the infrastructure and pipelines
+that move and store data. They design databases, build ETL pipelines,
+and ensure data is accessible and reliable for analysts and scientists.
+
+A Data Scientist builds predictive models and applies advanced statistical
+and machine learning techniques to extract deeper insights from data.

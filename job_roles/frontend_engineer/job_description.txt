@@ -1,0 +1,25 @@
+Role: Frontend Engineer
+
+Company Overview:
+We are hiring a Frontend Engineer to build responsive and interactive web applications.
+
+Responsibilities:
+- Build UI components
+- Integrate APIs
+- Optimize frontend performance
+- Ensure responsive design
+
+Required Skills:
+- HTML
+- CSS
+- JavaScript
+- React
+
+Preferred Skills:
+- TypeScript
+- Next.js
+- Testing libraries
+
+Experience:
+0-3 years preferred
+Bachelor's degree in Computer Science or related field

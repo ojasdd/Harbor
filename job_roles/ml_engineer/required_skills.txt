@@ -1,0 +1,24 @@
+Core Skills for Machine Learning Engineer:
+
+Technical Skills:
+- Python
+- Scikit-learn
+- TensorFlow
+- PyTorch
+- SQL
+- Docker
+- APIs
+- Git
+- Model Deployment
+
+Analytical Skills:
+- Optimization
+- Problem Solving
+- Debugging
+
+Optional Skills:
+- Kubernetes
+- MLflow
+- FastAPI
+- AWS
+- GCP

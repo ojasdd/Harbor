@@ -1,0 +1,22 @@
+Core Skills for AI Engineer:
+
+Technical Skills:
+- Python
+- TensorFlow
+- PyTorch
+- Machine Learning
+- Deep Learning
+- APIs
+- NLP
+- Model Deployment
+
+Analytical Skills:
+- Problem Solving
+- Research Mindset
+- Optimization
+
+Optional Skills:
+- LangChain
+- RAG
+- Vector Databases
+- LLM Fine-tuning

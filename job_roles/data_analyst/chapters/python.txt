@@ -1,0 +1,138 @@
+PYTHON FOR DATA ANALYSIS
+
+Python is the most widely used language for data analysis due to its simplicity
+and rich ecosystem of libraries including Pandas, NumPy, Matplotlib, and Seaborn.
+
+---
+
+PANDAS
+
+Pandas provides data structures and functions for data manipulation and analysis.
+The primary data structures are DataFrame (2D table) and Series (1D column).
+
+Reading data:
+pd.read_csv("file.csv")
+pd.read_excel("file.xlsx")
+pd.read_sql(query, connection)
+
+Inspecting data:
+df.head()        - first 5 rows
+df.tail()        - last 5 rows
+df.info()        - column types and null counts
+df.describe()    - summary statistics
+df.shape         - (rows, columns)
+
+Handling missing values:
+df.isnull().sum()           - count nulls per column
+df.dropna()                 - drop rows with any null
+df.fillna(value)            - fill nulls with a value
+df.fillna(df.mean())        - fill nulls with column mean
+df.fillna(method='ffill')   - forward fill
+
+Filtering and selecting:
+df[df['age'] > 30]                    - filter rows
+df[['name', 'age']]                   - select columns
+df.loc[row_label, col_label]          - label based selection
+df.iloc[row_index, col_index]         - index based selection
+
+Grouping and aggregation:
+df.groupby('department')['salary'].mean()
+df.groupby('department').agg({'salary': 'mean', 'age': 'max'})
+
+Merging:
+pd.merge(df1, df2, on='id', how='inner')
+pd.merge(df1, df2, on='id', how='left')
+
+Applying functions:
+df['column'].apply(lambda x: x * 2)
+df.apply(func, axis=1)
+
+Sorting:
+df.sort_values('salary', ascending=False)
+
+Removing duplicates:
+df.drop_duplicates()
+df.drop_duplicates(subset=['email'])
+
+---
+
+NUMPY
+
+NumPy provides fast numerical computing using n-dimensional arrays.
+It is the foundation for Pandas and most scientific Python libraries.
+
+Creating arrays:
+np.array([1, 2, 3])
+np.zeros((3, 4))
+np.ones((3, 4))
+np.arange(0, 10, 2)
+np.linspace(0, 1, 100)
+
+Array operations:
+np.mean(arr)
+np.median(arr)
+np.std(arr)
+np.sum(arr)
+np.min(arr) / np.max(arr)
+
+Statistical functions:
+np.percentile(arr, 25)    - 25th percentile
+np.corrcoef(x, y)         - correlation coefficient
+np.random.normal(mean, std, size)
+
+---
+
+MATPLOTLIB
+
+Matplotlib is the base plotting library for Python.
+All plots are created on a Figure with one or more Axes.
+
+import matplotlib.pyplot as plt
+
+Line chart:
+plt.plot(x, y)
+plt.title("Title")
+plt.xlabel("X axis")
+plt.ylabel("Y axis")
+plt.show()
+
+Bar chart:
+plt.bar(categories, values)
+
+Histogram:
+plt.hist(data, bins=20)
+
+Scatter plot:
+plt.scatter(x, y)
+
+Subplots:
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+axes[0].plot(x, y)
+axes[1].bar(categories, values)
+
+---
+
+SEABORN
+
+Seaborn builds on Matplotlib and provides high-level statistical visualizations.
+It works directly with Pandas DataFrames.
+
+import seaborn as sns
+
+Distribution plot:
+sns.histplot(df['column'], kde=True)
+
+Box plot (shows median, IQR, outliers):
+sns.boxplot(x='category', y='value', data=df)
+
+Heatmap (correlation matrix):
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+
+Pair plot (all pairwise relationships):
+sns.pairplot(df)
+
+Bar plot with error bars:
+sns.barplot(x='category', y='value', data=df)
+
+Scatter with regression line:
+sns.regplot(x='age', y='salary', data=df)

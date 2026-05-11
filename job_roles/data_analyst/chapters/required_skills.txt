@@ -1,0 +1,24 @@
+Core Skills for Data Analyst:
+
+Technical Skills:
+- Python
+- Pandas
+- NumPy
+- SQL
+- Excel
+- Tableau
+- Power BI
+- Statistics
+- Data Cleaning
+- Data Visualization
+
+Analytical Skills:
+- Problem Solving
+- Critical Thinking
+- Business Understanding
+
+Optional Skills:
+- Machine Learning
+- Hypothesis Testing
+- A/B Testing
+- ETL pipelines

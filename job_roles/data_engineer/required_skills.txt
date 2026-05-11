@@ -1,0 +1,22 @@
+Core Skills for Data Engineer:
+
+Technical Skills:
+- Python
+- SQL
+- ETL
+- Data Warehousing
+- Database Design
+- Spark
+- Kafka
+- Airflow
+
+Analytical Skills:
+- System Thinking
+- Optimization
+- Problem Solving
+
+Optional Skills:
+- Hadoop
+- AWS
+- Azure
+- GCP

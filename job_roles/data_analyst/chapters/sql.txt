@@ -1,0 +1,126 @@
+SQL FUNDAMENTALS
+
+SQL (Structured Query Language) is used to manage and query relational databases.
+Every query starts with SELECT to choose columns, FROM to choose the table,
+and optional clauses like WHERE, GROUP BY, HAVING, and ORDER BY.
+
+---
+
+JOINS
+
+JOIN operations combine rows from two or more tables based on a related column.
+
+INNER JOIN returns only rows where a match exists in both tables.
+Example:
+SELECT employees.name, departments.name
+FROM employees
+INNER JOIN departments ON employees.dept_id = departments.id;
+
+LEFT JOIN returns all rows from the left table. If no match exists in the right
+table, NULL is returned for right table columns.
+Example:
+SELECT employees.name, departments.name
+FROM employees
+LEFT JOIN departments ON employees.dept_id = departments.id;
+
+RIGHT JOIN returns all rows from the right table with NULLs for unmatched left rows.
+
+FULL OUTER JOIN returns all rows from both tables with NULLs where no match exists.
+
+SELF JOIN joins a table with itself. Useful for hierarchical data like employees and managers.
+
+---
+
+GROUP BY AND HAVING
+
+GROUP BY groups rows sharing a common value so aggregate functions can be applied.
+Common aggregate functions: COUNT(), SUM(), AVG(), MIN(), MAX()
+
+Example:
+SELECT department, COUNT(*) as employee_count
+FROM employees
+GROUP BY department;
+
+HAVING filters groups after aggregation. WHERE filters rows before aggregation.
+Use HAVING when filtering on an aggregated value.
+
+Example:
+SELECT department, AVG(salary) as avg_salary
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 50000;
+
+---
+
+WINDOW FUNCTIONS
+
+Window functions perform calculations across a set of rows related to the current row
+without collapsing them into a single output like GROUP BY does.
+
+Syntax: function_name() OVER (PARTITION BY col ORDER BY col)
+
+ROW_NUMBER() assigns a unique sequential number to each row within a partition.
+RANK() assigns rank with gaps for ties.
+DENSE_RANK() assigns rank without gaps for ties.
+LAG() accesses data from a previous row in the same result set.
+LEAD() accesses data from a following row.
+SUM() OVER() calculates a running total.
+
+Example:
+SELECT name, salary,
+RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank
+FROM employees;
+
+---
+
+SUBQUERIES
+
+A subquery is a query nested inside another query.
+They can appear in SELECT, FROM, or WHERE clauses.
+
+Correlated subquery references the outer query and runs once per row.
+Non-correlated subquery runs independently and its result is used by the outer query.
+
+Example:
+SELECT name, salary
+FROM employees
+WHERE salary > (SELECT AVG(salary) FROM employees);
+
+---
+
+INDEXES AND PERFORMANCE
+
+An index speeds up data retrieval by creating a lookup structure on a column.
+Indexes slow down INSERT and UPDATE operations but speed up SELECT queries.
+Use indexes on columns frequently used in WHERE, JOIN, and ORDER BY clauses.
+
+Primary key is automatically indexed.
+Composite index covers multiple columns and is useful for multi-column queries.
+
+---
+
+NORMALIZATION
+
+Normalization organizes a database to reduce redundancy and improve data integrity.
+
+1NF: Each column contains atomic values. No repeating groups.
+2NF: All non-key columns depend on the entire primary key.
+3NF: No transitive dependencies. Non-key columns depend only on the primary key.
+
+---
+
+WORKING WITH SQL AND PYTHON TOGETHER
+
+A common workflow combines SQL for data extraction and Python for analysis.
+
+Step 1 - Extract: Use SQL to query and filter data from a database.
+Step 2 - Load: Use Python libraries like pandas and sqlalchemy to load results.
+Step 3 - Clean: Use Pandas to handle missing values, duplicates, and formatting.
+Step 4 - Analyze: Use NumPy and Pandas for aggregations and statistical analysis.
+Step 5 - Visualize: Use Matplotlib or Seaborn to create charts and reports.
+
+Example connection in Python:
+import pandas as pd
+from sqlalchemy import create_engine
+engine = create_engine("postgresql://user:password@host/dbname")
+df = pd.read_sql("SELECT * FROM transactions WHERE year = 2024", engine)

@@ -1,0 +1,25 @@
+Core Skills for Data Scientist:
+
+Technical Skills:
+- Python
+- Pandas
+- NumPy
+- SQL
+- Statistics
+- Machine Learning
+- Scikit-learn
+- Data Visualization
+- Feature Engineering
+- Model Evaluation
+
+Analytical Skills:
+- Problem Solving
+- Statistical Thinking
+- Business Understanding
+
+Optional Skills:
+- TensorFlow
+- PyTorch
+- NLP
+- Deep Learning
+- A/B Testing

@@ -1,0 +1,22 @@
+Core Skills for Backend Engineer:
+
+Technical Skills:
+- Python
+- Java
+- SQL
+- APIs
+- OOP
+- Database Design
+- Authentication
+- Git
+
+Analytical Skills:
+- Debugging
+- Problem Solving
+- System Thinking
+
+Optional Skills:
+- Redis
+- Docker
+- System Design
+- Microservices

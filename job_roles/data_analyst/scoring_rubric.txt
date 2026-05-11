@@ -1,0 +1,25 @@
+Interview Evaluation Rubric:
+
+Technical Accuracy:
+10 - Fully correct with depth
+7-9 - Mostly correct, minor omissions
+4-6 - Partial understanding
+1-3 - Major inaccuracies
+
+Clarity:
+10 - Clear and concise
+7-9 - Mostly understandable
+4-6 - Some ambiguity
+1-3 - Poor communication
+
+Completeness:
+10 - Covers all major points
+7-9 - Covers most points
+4-6 - Missing important details
+1-3 - Very incomplete
+
+Communication:
+10 - Professional and structured
+7-9 - Understandable
+4-6 - Weak structure
+1-3 - Difficult to follow

@@ -1,0 +1,19 @@
+Core Skills for Frontend Engineer:
+
+Technical Skills:
+- HTML
+- CSS
+- JavaScript
+- React
+- APIs
+- Responsive Design
+
+Analytical Skills:
+- UI Problem Solving
+- Debugging
+
+Optional Skills:
+- TypeScript
+- Next.js
+- Redux
+- Testing

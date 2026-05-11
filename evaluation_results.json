@@ -1,0 +1,101 @@
+[
+  {
+    "question": "What is the difference between GROUP BY and HAVING?",
+    "answer": "GROUP BY groups rows by a column. HAVING filters those groups based on a condition after aggregation. WHERE cannot be used with aggregate functions but HAVING can.",
+    "source": "qa",
+    "technical_accuracy": null,
+    "clarity": 8,
+    "completeness": null,
+    "communication": null,
+    "strengths": [],
+    "weaknesses": []
+  },
+  {
+    "question": "What are window functions in SQL?",
+    "answer": "Window functions perform calculations across a set of rows related to the current row without collapsing them. Examples include ROW_NUMBER, RANK, LAG, LEAD, and SUM OVER.",
+    "source": "chapter",
+    "technical_accuracy": 9.5,
+    "clarity": 9.8,
+    "completeness": 9.7,
+    "communication": 9.6,
+    "strengths": [
+      "Correctly identified window functions and provided examples"
+    ],
+    "weaknesses": []
+  },
+  {
+    "question": "What is the difference between loc and iloc in Pandas?",
+    "answer": "loc is label based and uses column names and row labels. iloc is index based and uses integer positions.",
+    "source": "qa",
+    "technical_accuracy": 9,
+    "clarity": 8,
+    "completeness": 10,
+    "communication": 7,
+    "strengths": [
+      "Correct terminology used",
+      "Clear distinction between loc and iloc"
+    ],
+    "weaknesses": [
+      "Did not mention 'integer positions' in context of label-based indexing"
+    ]
+  },
+  {
+    "question": "What is standard deviation?",
+    "answer": "Standard deviation measures the spread of data around the mean. A low standard deviation means data is clustered. A high one means data is spread out.",
+    "source": "chapter",
+    "technical_accuracy": 9.5,
+    "clarity": 8.7,
+    "completeness": 8.0,
+    "communication": 9.2,
+    "strengths": [
+      "The candidate accurately described the concept of standard deviation.",
+      "Answer was mostly clear and concise."
+    ],
+    "weaknesses": [
+      "Could include a brief explanation about why understanding spread is important for normalization purposes as it relates to outliers in data distribution."
+    ]
+  },
+  {
+    "question": "What is the difference between normalization and standardization?",
+    "answer": "Normalization rescales data between 0 and 1 using min and max values. Standardization transforms data to have mean 0 and standard deviation 1. Normalization is sensitive to outliers while standardization is more robust.",
+    "source": "qa",
+    "technical_accuracy": 8,
+    "clarity": 9,
+    "completeness": 8,
+    "communication": 7,
+    "strengths": [
+      "Correct differentiation between normalization and standardization.",
+      "Acknowledged sensitivity to outliers for normalization."
+    ],
+    "weaknesses": [
+      "Might have provided more context about the practical applications of both methods."
+    ]
+  },
+  {
+    "question": "What is ETL?",
+    "answer": "ETL stands for Extract Transform Load. You extract data from sources, transform it by cleaning and formatting, then load it into a data warehouse or database.",
+    "source": "qa",
+    "technical_accuracy": 8.5,
+    "clarity": 9.0,
+    "completeness": 7.5,
+    "communication": 9.5,
+    "strengths": [
+      "Correctly identified the acronym ETL",
+      "Clear and concise explanation"
+    ],
+    "weaknesses": [
+      "Omitted 'usable format' in transform step"
+    ]
+  },
+  {
+    "question": "What is blockchain?",
+    "answer": "Blockchain is a distributed ledger technology where data is stored in linked blocks that are tamper resistant.",
+    "source": "none",
+    "technical_accuracy": null,
+    "completeness": null,
+    "strengths": [],
+    "weaknesses": [
+      "Question not in knowledge base"
+    ]
+  }
+]

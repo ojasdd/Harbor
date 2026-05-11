@@ -1,0 +1,31 @@
+Role: Data Scientist
+
+Company Overview:
+We are seeking a Data Scientist to extract insights from data, build predictive models, and solve business problems using machine learning and statistical techniques.
+
+Responsibilities:
+- Collect and preprocess large datasets
+- Perform exploratory data analysis
+- Build and evaluate machine learning models
+- Feature engineering and model tuning
+- Communicate findings to stakeholders
+- Collaborate with engineering and product teams
+
+Required Skills:
+- Python
+- SQL
+- Statistics
+- Machine Learning
+- Pandas
+- NumPy
+- Scikit-learn
+
+Preferred Skills:
+- Deep Learning
+- NLP
+- Computer Vision
+- Big Data tools
+
+Experience:
+0-3 years preferred
+Bachelor's or Master's degree in Computer Science, Statistics, Mathematics, or related field

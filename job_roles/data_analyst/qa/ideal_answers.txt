@@ -1,0 +1,284 @@
+Question: What is the role of a Data Analyst?
+
+Ideal Answer:
+A Data Analyst collects, cleans, processes, and analyzes data to help organizations make data-driven decisions.
+Their responsibilities include identifying trends, building dashboards, generating reports, performing statistical analysis, and communicating insights to stakeholders.
+They often work with SQL, Python, Excel, and BI tools like Tableau or Power BI.
+
+
+Question: What is data cleaning?
+
+Ideal Answer:
+Data cleaning is the process of identifying and correcting inaccurate, incomplete, duplicate, or inconsistent data.
+Common steps include:
+- Handling missing values
+- Removing duplicates
+- Standardizing formats
+- Correcting inconsistent labels
+- Detecting and treating outliers
+Clean data is essential for accurate analysis and model performance.
+
+
+Question: How do you handle missing values in a dataset?
+
+Ideal Answer:
+Handling missing values depends on the business context and dataset characteristics.
+Common methods include:
+- Dropping rows or columns with excessive missing values
+- Mean, median, or mode imputation
+- Forward fill or backward fill for time series
+- Predictive imputation using machine learning
+The chosen method should minimize bias and preserve data quality.
+
+
+Question: How do you detect and handle outliers?
+
+Ideal Answer:
+Outliers can be detected using:
+- Box plots
+- IQR method
+- Z-score
+- Visualization techniques
+
+Handling methods include:
+- Removing extreme values
+- Capping values
+- Transformation such as log transformation
+- Investigating business reasons before removal
+
+
+Question: Explain normalization and standardization.
+
+Ideal Answer:
+Normalization rescales data to a fixed range, usually 0 to 1.
+
+Formula:
+X_new = (X - X_min) / (X_max - X_min)
+
+Standardization transforms data to have mean 0 and standard deviation 1.
+
+Formula:
+Z = (X - mean) / standard deviation
+
+Normalization is useful for bounded data, while standardization is useful when data follows a normal distribution.
+
+
+Question: What is SQL?
+
+Ideal Answer:
+SQL (Structured Query Language) is used to store, retrieve, manipulate, and manage relational databases.
+It is commonly used for querying data, filtering results, joining tables, aggregating values, and updating records.
+
+
+Question: What is the difference between WHERE and HAVING?
+
+Ideal Answer:
+WHERE filters rows before aggregation.
+
+Example:
+SELECT * FROM employees WHERE salary > 50000;
+
+HAVING filters groups after aggregation.
+
+Example:
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 5;
+
+
+Question: What is the difference between INNER JOIN and LEFT JOIN?
+
+Ideal Answer:
+INNER JOIN returns only matching rows from both tables.
+
+LEFT JOIN returns all rows from the left table and matching rows from the right table.
+If no match exists, NULL values are returned for right table columns.
+
+
+Question: What is GROUP BY in SQL?
+
+Ideal Answer:
+GROUP BY is used to group rows that have the same values into summary rows.
+It is commonly used with aggregate functions like COUNT, SUM, AVG, MAX, and MIN.
+
+Example:
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department;
+
+
+Question: What are aggregate functions in SQL?
+
+Ideal Answer:
+Aggregate functions perform calculations on multiple rows and return a single result.
+
+Examples:
+- COUNT()
+- SUM()
+- AVG()
+- MAX()
+- MIN()
+
+
+Question: What is a primary key?
+
+Ideal Answer:
+A primary key uniquely identifies each record in a table.
+It must contain unique values and cannot contain NULL values.
+
+
+Question: What is a foreign key?
+
+Ideal Answer:
+A foreign key is a column that references the primary key of another table.
+It is used to maintain relationships between tables.
+
+
+Question: What is Pandas?
+
+Ideal Answer:
+Pandas is a Python library used for data manipulation and analysis.
+It provides data structures such as DataFrame and Series for handling tabular data efficiently.
+
+
+Question: What is NumPy?
+
+Ideal Answer:
+NumPy is a Python library for numerical computing.
+It provides support for arrays, matrices, and mathematical operations with high performance.
+
+
+Question: How do you remove duplicates in Pandas?
+
+Ideal Answer:
+Duplicates can be removed using:
+df.drop_duplicates()
+
+This removes duplicate rows from a DataFrame.
+
+
+Question: What is the difference between loc and iloc in Pandas?
+
+Ideal Answer:
+loc accesses data using labels.
+
+Example:
+df.loc[0, 'Name']
+
+iloc accesses data using integer positions.
+
+Example:
+df.iloc[0, 1]
+
+
+Question: What is data visualization?
+
+Ideal Answer:
+Data visualization is the graphical representation of data to communicate insights effectively.
+Common tools include:
+- Matplotlib
+- Seaborn
+- Tableau
+- Power BI
+
+
+Question: What are KPIs?
+
+Ideal Answer:
+KPIs (Key Performance Indicators) are measurable values used to evaluate business performance.
+Examples include:
+- Revenue growth
+- Customer retention rate
+- Conversion rate
+- Average order value
+
+
+Question: What is hypothesis testing?
+
+Ideal Answer:
+Hypothesis testing is a statistical method used to determine whether an assumption about a population is likely true.
+
+Steps:
+1. Define null and alternative hypotheses
+2. Choose significance level
+3. Compute test statistic
+4. Compare p-value
+5. Make decision
+
+
+Question: What is p-value?
+
+Ideal Answer:
+A p-value measures the probability of obtaining observed results assuming the null hypothesis is true.
+
+A small p-value, usually less than 0.05, suggests strong evidence against the null hypothesis.
+
+
+Question: What is correlation?
+
+Ideal Answer:
+Correlation measures the strength and direction of the relationship between two variables.
+
+Range:
+-1 to 1
+
+1 indicates perfect positive correlation.
+-1 indicates perfect negative correlation.
+0 indicates no correlation.
+
+
+Question: What is regression?
+
+Ideal Answer:
+Regression is a statistical technique used to model the relationship between dependent and independent variables.
+It is commonly used for prediction and trend analysis.
+
+
+Question: Explain a project where you used SQL and Python together.
+
+Ideal Answer:
+In one project, SQL was used to extract customer transaction data from a database.
+Python with Pandas was used for cleaning and preprocessing.
+Matplotlib and Seaborn were used for visualization.
+Insights were then presented using dashboards or reports.
+
+
+Question: What is A/B testing?
+
+Ideal Answer:
+A/B testing compares two versions of a product, webpage, or strategy to determine which performs better.
+
+Example:
+Testing two landing page designs to compare conversion rates.
+
+
+Question: What is ETL?
+
+Ideal Answer:
+ETL stands for Extract, Transform, Load.
+
+- Extract data from sources
+- Transform data into usable format
+- Load data into target systems like warehouses or databases
+
+
+Question: What are window functions in SQL?
+
+Ideal Answer:
+Window functions perform calculations across a set of rows related to the current row without collapsing them into a single output like GROUP BY does.
+
+Syntax: function_name() OVER (PARTITION BY col ORDER BY col)
+
+Common window functions:
+- ROW_NUMBER() assigns a unique sequential number to each row
+- RANK() assigns rank with gaps for ties
+- DENSE_RANK() assigns rank without gaps for ties
+- LAG() accesses data from a previous row
+- LEAD() accesses data from a following row
+- SUM() OVER() calculates a running total
+
+Example:
+SELECT name, salary,
+RANK() OVER (PARTITION BY department ORDER BY salary DESC) as salary_rank
+FROM employees;
